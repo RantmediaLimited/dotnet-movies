@@ -1,0 +1,30 @@
+﻿@model MovieViewModel
+@{
+	ViewData["Title"] = Model.Title + " | Movie Central";
+}
+
+<h1>@Model.Title</h1>
+<div>
+	<strong>Language</strong>
+	@Model.OriginalLanguage
+</div>
+<div>
+	<strong>Release Date</strong>
+	@Model.ReleaseDate
+</div>
+<div>
+	<strong>Overview</strong>
+	@Model.Overview
+</div>
+<div>
+	<strong>Vote Average</strong>
+	@Model.VoteAverage
+</div>
+
+<form method="get" asp-action="EmailMovieDetails">
+	<div>
+		<label for="email">Email Address</label>
+		<input name="email" />
+		<button>Email me this movie</button>
+	</div>
+</form>

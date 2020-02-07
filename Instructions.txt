@@ -1,0 +1,30 @@
+Clone https://github.com/RantmediaLimited/dotnet-movies
+
+You will have 90 minutes to complete as many items as possible.
+You are not necessarily expected to finish all features.  If you do finish, you can then improve your app in any way you like.
+We would like to see you work as you usually would - please feel free to use any reference material, notes and resources you would like (Stack Overflow, Google searches etc).
+We are more interested in your approach to code than the design of the app - very basic UI is fine.  Code quality and structure is particularly important - an incomplete solution with good code will be better received than a complete but poorly structured response. 
+
+1. Fix MovieJsonStoreTests by implementing MovieJsonStore using Linq.
+
+2. MovieController is too tightly coupled to Json.  Decouple it using IMovie and IMovieStore
+
+3. MoviesController action methods are taking too long.  What can be done?
+
+4. In Movies.Web\Controllers\Movies\Index.cshtml
+	Remove "var movie" and show a row for each movie
+	Make "Details" link, navigate to the specific movie's details
+
+5. Details.cshtml isn't showing the Overview text.  Fix this.
+
+6. MoviesController should use MovieService instead of directly calling the store
+
+7. Make MoviesService.EmailMovieDetailsAsync() call MovieEmailer.EmailMovieDetailsAsync()
+
+8. Although MovieEmailer is pretending to email, it is still inefficient.  Why?
+
+9. Make MovieController.EmailMovieDetails call MovieService.EmailMovieDetailsAsync() and show the caller the details page again
+
+10. The user's email address is getting stored in the browser history.  How can this be fixed?
+
+11. The root of the website should invoke MoviesController.Index() and we would like movie details to be accessible at /movie/the-movie-id.  Please update the routing.

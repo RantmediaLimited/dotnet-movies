@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Core", "Movies.Core\Movies.Core.csproj", "{2B0327E6-D1A9-4C62-910C-7843ED578489}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Core", "Movies.Core\Movies.Core.csproj", "{2B0327E6-D1A9-4C62-910C-7843ED578489}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Storage.Json.Tests", "Movies.Storage.Json.Tests\Movies.Storage.Json.Tests.csproj", "{9D72F182-523C-43E4-8EFD-77BF274CA12E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Storage.Json.Tests", "Movies.Storage.Json.Tests\Movies.Storage.Json.Tests.csproj", "{9D72F182-523C-43E4-8EFD-77BF274CA12E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Web", "Movies.Web\Movies.Web.csproj", "{6470AE3C-E038-4634-A34A-A0664859BEC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Web", "Movies.Web\Movies.Web.csproj", "{6470AE3C-E038-4634-A34A-A0664859BEC7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Storage.Json", "Movies.Storage.Json\Movies.Storage.Json.csproj", "{01BB7864-6A83-4727-827C-ED88018EA13D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C2C02A80-4071-44F3-A05B-90AAC38E3B40}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions.txt = Instructions.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
